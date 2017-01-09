@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="home">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <title>Lottery</title>
+  </head>
+  <body ng-controller="HomeController">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">{{greeting}} </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li role="presentation" class="{{tabs[0]}}" ng-click="setActive(0)"><a href="markSix">Mark Six</a></li>
+            <li role="presentation" class="{{tabs[1]}}" ng-click="setActive(1)"><a href="redBlue">Red Blue</a></li>
+            <li role="presentation" class="{{tabs[2]}}" ng-click="setActive(2)"><a href="luckyDraw">Lucky Draw</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div ng-view style="margin: 15px;">
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>

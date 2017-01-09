@@ -1,0 +1,27 @@
+<div>
+  <p style="font-weight: bold; font-size: 20px; color: red;">
+    Lucky guy: {{lucky}}
+  </p>
+  <p>
+    <table>
+      <tr>
+        <td style="vertical-align: top; width: 80px;">
+          Candidates:
+        </td>
+        <td>
+          <textarea ng-model="names" name="members" rows=6 cols=150 readonly></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td style="vertical-align: top">
+          Picked:
+        </td>
+        <td>
+          <textarea ng-model="pickedNames" name="pickMembers" rows=6 cols=150 readonly></textarea>
+        </td>
+      </tr>
+    </table>
+  </p>
+  <button ng-click="next()">Next</button>
+  <button ng-click="reset()">Reset</button>
+</div>
